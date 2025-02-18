@@ -1,108 +1,129 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="styleform.css">
-  
+    <title>Secret</title>
+    <link rel="stylesheet" href="stylehome.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=
+Poppins:wght@100;200;300;400;600;700&display=swap" 
+rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.
+0/css/fontawesome.min.css">
 </head>
 <body>
-    <form action="" class="form">
-        <div
-style="
-height: 100%;
-width: 100%;
-display: flex;
-align-items: center;
-justify-content: center;
-">
+    <section class="header">
+        <nav>
+            <a href="testlang to.html"><img src="logo copy.png"></a>
+            <div class="nav-links" id="nav-links">
+                <i class="fa fa-times" onclick="hidenMenu()"></i>
 
-    <div>
-        <h1> Registration Form</h1>
-        <p>
+                <ul>
+                <li><a href="testlang to.html">Home</a></li>
+                <li><a href="strand2.html">Strand</a></li>
+                <li><a href="">Guide</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="WEB DEVELOPER/web.html">Web Developer</a></li>
+                <li><a href="">Contact Us</a></li>
+                <li><a href="">Log Out</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars"  onclick="showMenu()"></i>
+        </nav>
 
-        fill out this form carefully to registration
-       </p>
-       
-       <h3> Studen Form</h3>
-        
-       <br>
-        <form action="" method="post"></form>
-   <div>
-        <label for="fname">First Name:</label>
-        <input type="text" id="fname" name="fname" placeholder="enter">
-   </div>
+        <div class="text-box">
+            <h1>Rosales National High School</h1>
+            <p>Welcome To Rosales National High School</p>
+            <a href="" class="hero-btn">visit us to know more</a>
+        </div>
 
-   <br>
+    </section>
 
-   <div>  
-        <label for="lname">Last Name:</label>
-        <input type="text" id="lname" name="lname" placeholder="enter" required>
-   </div>
+    <!------about ------>
 
-   <br>
-   
-   <div>
-        <label for="e-mail"> E-mail:</label>
-        <input type="e-mail" name="E-mail" placeholder="enter" required>
-   </div>
+    <section class="About">
+        <h1>About Us</h1>
+        <p>Establish in 1972, rosales national high school has been committed to providing quality
+             education that nurtures young minds and prepares students for a briter future.
+             our School foster a culture of academic excellence, characters developement, and holistic learning.
+        </p>
 
-<br>
+    </section>
 
-    <div>
-       <label for="phonenumber">Phone Numnbe:</label>
-        <input type=" tel" name="phone" placeholder="optional" required>
-   </div>
-   
-   <br>
+<!------proper uniform------>
+    <section class="uniform">
+       <div class="layer">
+        <div class="uniform-col">
+            <img src="shs.png">
+        </div>
+       </div>
+    </section>
+    </section>
 
-<div>
-   <label for="Sex">Sex:</label>
+<!-----facilities---->
+<section class="facilities">
+    <h1>our facilities</h1>
+    <p>masarap ang mga foods here</p>
 
-   <br>
-
-   <label for="Male">Male</label>
-   <input type="radio" id="Male" name="Sex" value="Male">
-
-   <br>
-
-   <label for="Female">Female</label>
-   <input type="radio" id="Female" name="Sex" value="Female">
-
-   <br>
-
-   <label for="gay">none of the above</label>
-   <input type="radio" id="gay" name="Sex" value="gay">
-
-   <br>
-
-
-</div>
-<br>
-
-   <div>
-
-   </div>
-
-   <br>
-
-   <div>
-       <a href="homepage.html">
-        <input type="button" name="submit" value="submit" id="submit">
-   </div>
-
-
-      
-<br> 
-<br>
-
- 
-
-       
-        
+    <div class="row">
+        <div class="facilities-col">
+            <img src="gym.png">
+            <h3>masarep</h3>
+            <p>titikman</p>
+        </div>
+        <div class="facilities-col">
+            <img src="pagcor.jpg">
+            <h3>masarep</h3>
+            <p>titikman</p>
+        </div>
+        <div class="facilities-col">
+            <img src="Gym.jpg">
+            <h3>masarep</h3>
+            <p>titikman</p>
+        </div>
     </div>
-</div>
-    </form>
+</section>
+
+
+
+<!------- call to action----->
+
+<section class="cta">
+    <h1>Enroll</h1>
+    <a href="" class="hero-btn">Contact Us</a>
+</section>
+
+<!------- footer ----->
+
+<section class="footer">
+    <h4>Contact Us</h4>
+    <p>via</p>
+    <ul>
+        <li>Email:Rnhs@gmail.com</li>
+        <li>Phone:0912345567</li>
+        <li>Address:nbsub</li>
+    </ul>
+
+</section>
+
+
+
+<!------JavaScript for Toggle Menu------>
+    <script>
+
+        var navLinks =  document.getElementById("Navlinks"); 
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hidenMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+
+   
+
 </body>
 </html>
